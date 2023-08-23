@@ -1,2 +1,2 @@
 # dsa-javascript
-daily dsa code in hs
+daily dsa code in js
