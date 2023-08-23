@@ -19,3 +19,6 @@ peakElementInArray = (arr) =>{
 }
 
 console.log("peakElementInArray", peakElementInArray([10, 20, 15, 2, 23, 90, 67]))
+arr = [10, 20, 15, 2, 23, 90, 67]
+console.log("reverse", arr.reverse());
+console.log("sort_array_in_asc", arr.sort((a,b) => a-b));
