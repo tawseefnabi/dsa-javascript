@@ -33,5 +33,12 @@ duplicateInArray_v2 = (arr) =>{
   });
 
 }
+duplicateInArray_v3=(arr) =>{
+  let a = arr.filter((value, index,array)=>{
+    array.indexOf(value) == index
+  })
+  console.log("duplicate", a)
+}
 duplicateInArray( [1,3,4,2,2])
 duplicateInArray_v2( [3,1,3,4,2])
+duplicateInArray_v3( [3,1,3,4,2])
