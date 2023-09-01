@@ -13,8 +13,9 @@
 
 
 rotateArray = (arr, rotateAt) =>{
-  let a = arr.slice(rotateAt, arr.length).concat(arr.slice(0, rotateAt))
-  console.log("a", a);
+  let rotatedArray = arr.slice(rotateAt, arr.length).concat(arr.slice(0, rotateAt))
+  console.log("rotatedArray", rotatedArray);
+  return rotatedArray
 }
 
 arr = [1,2,3,4,5]  // output 34512
