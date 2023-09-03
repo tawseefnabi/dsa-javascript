@@ -20,3 +20,4 @@ rotateArray = (arr, rotateAt) =>{
 
 arr = [1,2,3,4,5]  // output 34512
 rotateArray(arr, 2)
+rotateArray(arr, 1)
