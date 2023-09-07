@@ -41,6 +41,20 @@ twoSum = (arr, sum) => {
   console.log("two numbers are", n);
 
 }
-twoSum([2,7,11,15], 9)
-twoSum([2,3,4], 6)
-twoSum([-1,0], -1)
+twoSum_v2 = (arr, sum) =>{
+  let hasMap= new Set()
+  pair = []
+  for(let i=0;i<arr.length;i++){
+    let diff = sum-arr[i]
+    if(hasMap.has(sum-arr[i])){
+      pair.push(arr[i], diff)
+      // pair.push(diff)
+    }
+    hasMap.add(arr[i])
+   
+  }
+  console.log("TwoSum:-", pair);
+}
+twoSum_v2([2,7,11,15], 9)
+// twoSum([2,3,4], 6)
+// twoSum([-1,0], -1)
