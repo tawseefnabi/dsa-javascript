@@ -17,6 +17,14 @@ reverseArray_v2 = (arr) =>{
   }
   console.log("reverseArray_v2:===", arr);
 }
+function reverseArray_v3(arr)  {
+  let rev = []
+  for(let i= arr.length-1; i>=0;i-- ){
+    rev.push(arr[i])
+  }
+  console.log("reverseArray_v3:===", rev);
+}
+// reverseArray([2,3,9,0])
+// reverseArray_v2([2,3,9,0])
+reverseArray_v3([2,3,9,0])
 
-reverseArray([2,3,9,0])
-reverseArray_v2([2,3,9,0])

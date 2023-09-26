@@ -13,4 +13,21 @@ function maxMininArray(arr) {
   }
   console.log("max: ", max, "min: ", min);
 }
-maxMininArray([12, 1234, 45, 67, 1])
+
+
+function maxMininArray_v2(arr){
+  let max = arr[0]
+  let min = arr[0]
+  for(let a of arr){
+    if(a< min){
+      min = a
+    }
+    if(a>max){
+      max  = a
+    }
+  }
+  return {
+    max, min
+  }
+}
+console.log( maxMininArray_v2([12, 1234, 45, 67, 1]))
