@@ -22,5 +22,17 @@ kthLargestnSmallest = (arr, k) =>{
   console.log("kth largest element in array: ", kth_largest)
 }
 arr = [7, 10, 4, 3, 20, 15], K = 3 
+kthLargestnSmallest_v2 = (arr, k) =>{
+  for (let i=0;i<arr.length;i++){
+    for(let j=0;j<arr.length-i-1;j++){
+      if(arr[j]>arr[j+1]){
+        [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
+      }
+    }
+  }
+  console.log("sorted", arr, arr[K]);
+
+}
+arr = [7, 10, 4, 3, 20, 15], K = 4 
 
 kthLargestnSmallest(arr, K)
