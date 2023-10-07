@@ -35,4 +35,56 @@ function repeating_element_in_array_v2(arr){
 arr =[10, 5, 3, 4, 3, 5, 6]
 
 // repeating_element_in_array(arr)
-repeating_element_in_array_v2(arr)
+// repeating_element_in_array_v2(arr)
+
+function repeating_element_in_array_v3(arr){
+  console.log("arr", arr);
+  let find = true
+  for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+      if(arr[i]==arr[j]){
+        return console.log("repeating element is ", arr[i]);
+      }
+    }
+  }
+}
+
+// repeating_element_in_array_v3(arr)
+
+// repeating_element_in_array_v4(arr)
+
+function repeating_element_in_array_v4(arr){
+  console.log("arr", arr);
+  let seen = new Set()
+  let repeated = undefined
+  arr.forEach(el =>{
+    if(seen.has(el)){
+      console.log("duplicate: ",el)
+      repeated = el
+      return false
+    }
+    seen.add(el)
+  })
+  return console.log(repeated)
+}
+// repeating_element_in_array_v4(arr)
+function repeating_element_in_array_v5(arr){
+  for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+      if(arr[i]>arr[j]){
+        let temp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = temp
+      }
+    }
+  }
+  for(let i=0;i<arr.length;i++){
+    if(arr[i] == arr[i+1]){
+      return console.log(arr[i])
+    }
+  }
+  return console.log("Not founc");
+}
+repeating_element_in_array_v5(arr)
+
+
