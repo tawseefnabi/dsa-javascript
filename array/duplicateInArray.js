@@ -39,6 +39,17 @@ duplicateInArray_v3=(arr) =>{
   })
   console.log("duplicate", a)
 }
-duplicateInArray( [1,3,4,2,2])
-duplicateInArray_v2( [3,1,3,4,2])
-duplicateInArray_v3( [3,1,3,4,2])
+// duplicateInArray( [1,3,4,2,2])
+// duplicateInArray_v2( [3,1,3,4,2])
+// duplicateInArray_v3( [3,1,3,4,2])
+duplicateInArray_v4( [3,1,3,4,2])
+
+function duplicateInArray_v4(arr){
+  for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+      if(arr[i] == arr[j]){
+        console.log("duplicate", arr[i]);
+      }
+    }
+  }
+}
