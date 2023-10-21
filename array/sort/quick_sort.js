@@ -15,5 +15,7 @@ function quick_sort(arr){
   return [...quick_sort(lessThanPivot), pivot, ...quick_sort(greaterThanPivot)]
 
 }
-const unsortedArray = [5, 2, 9, 3, 6, 1, 8, 7];
-console.log("sorted", quick_sort(unsortedArray))
+const unsortedArrayOdd = [5, 2, 9, 3, 6, 1, 8, 7];
+console.log("sort odd array:", quick_sort(unsortedArrayOdd))
+const unsortedArrayEven = [4, 5, 3, 7, 2, 1];
+console.log("sort even array:", quick_sort(unsortedArrayEven))

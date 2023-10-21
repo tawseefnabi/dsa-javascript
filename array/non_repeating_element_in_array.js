@@ -26,11 +26,13 @@ function non_repeating_element_in_array_v2(arr){
       elementCount[element] =1
     }
   });
+  console.log("===", elementCount)
   for(let i=0;i<arr.length;i++){
     if(elementCount[arr[i]] ==1){
       return console.log(arr[i])
     }
   }
+
   return console.log("no element ");
 }
  arr = [9, 4, 9, 6, 7, 4];

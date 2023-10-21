@@ -43,4 +43,4 @@ function intersection_of_array(arr1, arr2) {
   }
   return inter_arr
 }
-console.log("union_of_array v2", intersection_of_array(arr1, arr2));
+console.log("intersection_of_array ", intersection_of_array(arr1, arr2));

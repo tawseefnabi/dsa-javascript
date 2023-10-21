@@ -5,15 +5,15 @@ function cyclic_rotate(arr) {
   for(let i=0;i<arr.length-1;i++){
     newArray.push(arr[i])
   }
-  console.log("cyclic rotate: ", newArray);
+  console.log("cyclic rotate1: ", newArray);
 }
 function cyclic_rotate_v2(arr){
   let lastElement = arr.pop()
   arr.unshift(lastElement)
-  console.log("cyclic rotate: ", arr);
+  console.log("cyclic rotate2 : ", arr);
 
 }
-// cyclic_rotate([1,2,3,4])
+cyclic_rotate([1,2,3,4, 5, 6], 4)
 
 // cyclic_rotate_v2([1,2,3,4])
 
@@ -50,4 +50,4 @@ cyclic_rotate_v5 = (arr, rotateAt) =>{
   console.log("rotatedArray", rotatedArray);
   return rotatedArray
 }
-cyclic_rotate_v5([1,7,3,4,8,2,6], 3)
+// cyclic_rotate_v5([1,7,3,4,8,2,6], 3)

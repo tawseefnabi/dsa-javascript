@@ -16,13 +16,16 @@
 // Output: 3
 
 duplicateInArray = (arr) => {
+  let dup_arr = []
   for(let i =0;i<arr.length;i++){
     for(let j=i+1;j<arr.length;j++){
       if(arr[i]==arr[j]){
-        console.log(`for array ${arr} duplicate is `, arr[i]);
+        
+        dup_arr.push(arr[i])
       }
     }
   }
+  console.log(`for array ${arr} duplicate is `, dup_arr);
 }
 duplicateInArray_v2 = (arr) =>{
   arr.sort((a,b) => a-b)
@@ -39,10 +42,10 @@ duplicateInArray_v3=(arr) =>{
   })
   console.log("duplicate", a)
 }
-// duplicateInArray( [1,3,4,2,2])
+duplicateInArray( [1, 2, 3, 6, 3, 6, 1])
 // duplicateInArray_v2( [3,1,3,4,2])
 // duplicateInArray_v3( [3,1,3,4,2])
-duplicateInArray_v4( [3,1,3,4,2])
+// duplicateInArray_v4( [3,1,3,4,2])
 
 function duplicateInArray_v4(arr){
   for(let i=0;i<arr.length;i++){
